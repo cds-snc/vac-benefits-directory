@@ -62,10 +62,9 @@ const questions = css`
   padding: 0;
 `;
 const body = css`
-  font-family: ${globalTheme.fontFamilySansSerif};
   margin-top: 5px;
   margin-bottom: 0px;
-  font-size: 20px;
+  font-size: 24px;
   @media only screen and (max-width: ${globalTheme.max.xs}) {
     font-size: 14px;
   }

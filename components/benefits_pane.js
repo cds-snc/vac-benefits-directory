@@ -17,8 +17,6 @@ import SearchBox from "./search_box";
 import { getBenefitCountString } from "../utils/common";
 import NoResultsButtons from "./no_results_buttons";
 import ResultsHeader from "./results_header";
-import Router from "next/router";
-import { mutateUrl } from "../utils/common";
 
 const title = css`
   padding-bottom: 15px;
@@ -37,16 +35,6 @@ export class BenefitsPane extends Component {
       this.props.saveQuestionResponse(q.variable_name, "");
     });
     this.props.saveQuestionResponse("selectedNeeds", {});
-    this.clearQueryParams();
-  };
-
-  clearQueryParams = () => {
-    const newUrl = this.props.url;
-    this.props.profileQuestions.forEach(q => {
-      newUrl.query[q.variable_name] = "";
-    });
-    newUrl.query["selectedNeeds"] = {};
-    Router.replace(mutateUrl(newUrl, "", ""));
   };
 
   countSelection = () => {
@@ -88,7 +76,7 @@ export class BenefitsPane extends Component {
       <Grid container spacing={16}>
         <Grid item xs={12}>
           <Header
-            className={"BenefitsCounter"}
+            css={"BenefitsCounter"}
             styles={title}
             size="md"
             headingLevel="h3"

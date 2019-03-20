@@ -40,7 +40,7 @@ const StyledInput = styled("input")(
 );
 
 const StyledLabel = styled("span")({
-  fontFamily: globalTheme.fontFamilySansSerif,
+  fontFamily: globalTheme.fontFamilySerif,
   fontWeight: 400,
   textTransform: "none",
   fontSize: "24px",
@@ -82,19 +82,13 @@ const mobileLabelStyle = css`
     font-size: 16px;
   }
 `;
-const sidebarLabelStyle = css({
-  fontSize: "14px !important",
-  padding: "6px 10px 15px 12px !important"
-});
 
-const Checkbox = ({ children, sidebar, ...props }) => {
+const Checkbox = ({ children, ...props }) => {
   const guid = uuidv4();
   return (
     <StyledCheckbox htmlFor={guid}>
       <StyledInput type="checkbox" {...props} id={guid} />
-      <StyledLabel css={[mobileLabelStyle, sidebar ? sidebarLabelStyle : null]}>
-        {children}
-      </StyledLabel>
+      <StyledLabel css={mobileLabelStyle}>{children}</StyledLabel>
     </StyledCheckbox>
   );
 };
@@ -104,8 +98,7 @@ Checkbox.defaultProps = {
 };
 
 Checkbox.propTypes = {
-  children: PropTypes.node.isRequired,
-  sidebar: PropTypes.bool
+  children: PropTypes.node.isRequired
 };
 
 export default Checkbox;
