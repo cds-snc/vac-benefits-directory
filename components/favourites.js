@@ -99,7 +99,11 @@ export class Favourites extends Component {
             <AlphaBanner t={t} url={url} />
             <Grid container spacing={32}>
               <Grid item xs={12}>
-                <Header css={"BenefitsCounter"} size="xl" headingLevel="h1">
+                <Header
+                  className={"BenefitsCounter"}
+                  size="xl"
+                  headingLevel="h1"
+                >
                   {t("titles.saved_list")}
                 </Header>
               </Grid>

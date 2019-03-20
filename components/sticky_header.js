@@ -76,7 +76,7 @@ export class StickyHeader extends Component {
               showShareLink={showShareLink}
             />
           </Grid>
-          <Grid item xs={8} className={alignRight}>
+          <Grid item xs={8} css={alignRight}>
             <HeaderLink
               id="editSelections"
               href={summaryUrl}
