@@ -70,7 +70,7 @@ const mobileLabelStyle = css`
   }
 `;
 
-const Radio = ({ children, className, value, styles, ...input }) => (
+const Radio = ({ children, value, styles, ...input }) => (
   <div css={[rootStyle, styles]}>
     <input
       type="radio"
