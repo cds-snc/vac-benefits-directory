@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/veteransaffairscanada/vac-benefits-directory.svg?style=svg)](https://circleci.com/gh/veteransaffairscanada/vac-benefits-directory)
 [![Known Vulnerabilities](https://snyk.io/test/github/veteransaffairscanada/vac-benefits-directory/badge.svg?targetFile=package.json)](https://snyk.io/test/github/veteransaffairscanada/vac-benefits-directory?targetFile=package.json)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcds-snc%2Fvac-benefits-directory.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcds-snc%2Fvac-benefits-directory?ref=badge_shield)
 
 [La version française suit.](#---------------------------------------------------------------------)
 
@@ -201,3 +202,7 @@ Cette application utilise les ressources suivantes (en anglais) :
 - NextJS [https://learnnextjs.com/](https://learnnextjs.com/)
 - Jest [https://facebook.github.io/jest/](https://facebook.github.io/jest/)
 - Prettier [https://prettier.io/](https://prettier.io/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcds-snc%2Fvac-benefits-directory.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcds-snc%2Fvac-benefits-directory?ref=badge_large)
